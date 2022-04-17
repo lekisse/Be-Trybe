@@ -66,13 +66,58 @@
       main.className = "main-content";
       document.body.appendChild(main);
       //questao 3
-      const section = document.createElement('section');
+      const section = document.createElement("section");
       section.className = "ceter-content";
       main.appendChild(section);
       //questao 4
-      const paragraph = document.createElement('p');
+      const paragraph = document.createElement("p");
       paragraph.innerText = "Conhecimento nao pode ser roubado! #VQV!";
       section.appendChild(paragraph);
+      //questao 5
+      const section2 = document.createElement("section");
+      section2.className = "left-content";
+      main.appendChild(section2);
+      //questao 6
+      const section3 = document.createElement("section");
+      section3.className = "right-content";
+      main.appendChild(section3);
+      //questao 7
+      const image = document.createElement("img");
+      image.src = "https://picsum.photos/200";
+      image.className = "small-image";
+      section2.appendChild(image);
+      //questao 8
+      const numbers = [
+        "um",
+        "dois",
+        "tres",
+        "quatro",
+        "cinco",
+        "seis",
+        "sete",
+        "oito",
+        "nove",
+        "dez",
+      ];
+      const elementUl = document.createElement("ul");
+      section3.appendChild(elementUl);
+      for (let num in numbers) {
+        const list = document.createElement("li");
+        list.innerHTML = numbers[num];
+        elementUl.appendChild(list);
+      }
+      //questao 9
+      for (let index = 0; index < 3; index += 1) {
+        const elementH3 = document.createElement("h3");
+        elementH3.innerHTML = "show" + index;
+        main.appendChild(elementH3);
+      }
+      //parte 2
+      // questao 1
+      const title = document.querySelector('h1');
+      elementH1.className("title");
+      //questao 2
+
     </script>
   </body>
 </html>
